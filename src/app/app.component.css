@@ -1,0 +1,37 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+  grid-gap: 30px;
+}
+
+.card {
+  height: 250px;
+  padding: 5px;
+  color: #fff;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: rgb(11, 250, 11);
+}
+
+.form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  max-width: 700px;
+  margin-bottom: 50px;
+}
+
+.form input {
+  padding: 5px;
+  width: 200px;
+}
+
+.form button {
+  margin-left: 50px;
+}
+

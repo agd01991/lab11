@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="col-12">
+     <div class="form">
+      <input type="text" placeholder="Имя" #name>
+      <button  class="btn btn-primary" (click)="addDetector(name)">Добавить</button>
+    </div>
+    <div class="cards" >
+      <div class="card red" *ngFor="let detector of detectors" [ngClass]="{ 'green': detector.status }">
+        <h1>Датчик №{{detector.id}}</h1>
+        <p>Имя: {{detector.name}}</p>
+        <p>Статус: {{detector.status}}</p>
+        <button class="btn btn-primary" (click)="deleteDetector(detector.id)">Удалить</button>
+      </div>
+    </div>
+  </div>
+</div>
